@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset='utf-8' />
-  <title>（実験・演習用）</title>
+  <meta charset="UTF-8">
+  <title>ピアノ個人レッスン予約</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      border: 2px solid #000;
+      padding: 30px 40px;
+      width: 400px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      margin-top: 15px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #005a9e;
+    }
+    .note {
+      font-size: 12px;
+      color: #666;
+      text-align: left;
+    }
+  </style>
 </head>
-
 <body>
-</body>
+  <div class="container">
+    <h1>ピアノ個人レッスン予約</h1>
+    <p>受講者番号とパスワードを入力してください。</p>
+    <form action="login.php" method="POST">
+      <label for="student_id">受講者番号</label>
+      <input type="text" id="student_id" name="student_id" maxlength="7" required>
 
+      <label for="password">パスワード</label>
+      <input type="password" id="password" name="password" maxlength="36" required>
+
+      <p class="note">※受講者番号は7桁、パスワードは最大36文字です。</p>
+
+      <button type="submit">ログイン</button>
+    </form>
+  </div>
+</body>
 </html>
+<form action="login.php" method="POST">

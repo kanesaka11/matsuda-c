@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>予約内容確認</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      border: 2px solid #000;
+      padding: 30px 40px;
+      width: 500px;
+      box-shadow: 2px 2px 10px #ccc;
+    }
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .btn-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>予約内容確認</h1>
+    <table>
+      <tr>
+        <td>レッスン日</td>
+        <td id="date">2025-06-21</td>
+      </tr>
+      <tr>
+        <td>時間帯</td>
+        <td id="time">10:00〜</td>
+      </tr>
+      <tr>
+        <td>講師名</td>
+        <td id="teacher">山田先生</td>
+      </tr>
+      <tr>
+        <td>レッスン種別</td>
+        <td id="lesson_type">オンライン</td>
+      </tr>
+    </table>
+    <div class="btn-row">
+      <button onclick="location.href='reserve.html'">戻る</button>
+      <button onclick="location.href='confirm.html'">確定する</button>
+    </div>
+  </div>
+</body>
+</html>
