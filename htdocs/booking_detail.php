@@ -38,7 +38,7 @@ $stmt->bindValue(':ln', $ln, PDO::PARAM_INT);
 $stmt->execute();
 $res = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// 存在チェック
+// 存在確認
 if (!$res) {
     header('Location: booking.php');
     exit;
