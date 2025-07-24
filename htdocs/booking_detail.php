@@ -19,7 +19,7 @@ if (empty($_SESSION['Login_number']) || !isset($_GET['id'])) {
 $ln = (int)$_SESSION['Login_number'];
 $id = (int)$_GET['id'];
 
-// 詳細取得
+// 詳細獲得
 $stmt = $db->prepare(
     'SELECT
         c.id,
